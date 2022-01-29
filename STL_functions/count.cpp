@@ -11,7 +11,20 @@ Source: GFG
 #include <bits/stdc++.h>
 using namespace std;
 
-// leetcode 2114: Maximum words found in a sentence; strategy used: count the number of spaces ' '.
+/*
+LeetCode:
+
+2114: Maximum words found in a sentence
+
+Input: sentences = ["alice and bob love leetcode", "i think so too", "this is great thanks very much"]
+Output: 6
+
+Input: sentences = ["please wait", "continue to fight", "continue to win"]
+Output: 3
+
+Strategy used: count the number of spaces ' '
+*/
+
 int mostWordsFound(vector<string>& sentences) {
     int res=0;
     for(auto i:sentences)

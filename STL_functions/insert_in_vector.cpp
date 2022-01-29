@@ -10,28 +10,39 @@ Source: GFG
 
 #include<iostream>
 #include<vector>
+
 using namespace std;
+
+/* 
+LeetCode: 
+
+1929. Concatenation of Array
+  
+Input: nums = [1,2,1]
+Output: [1,2,1,1,2,1]
+
+Input: nums = [1,3,2,1]
+Output: [1,3,2,1,1,3,2,1]
+
+Strategy used: concatenated the vector with itself 
+*/
+
+vector<int> getConcatenation(vector<int>& nums) {
+    nums.insert(nums.end(), nums.begin(), nums.end());
+    return nums;
+}
+
 int main(){
     
-    vector<int> vector1{1,2,3,4,5};
-    vector<int> vector2{6,7,8,9,10};
+    vector<int> nums{1,2,3,4,5};
 
-    // can be used to concatenate two vectors
-    vector1.insert( vector1.end(), vector2.begin(), vector2.end() );
 
-    for(int x:vector1){
+    for(int x:getConcatenation(nums)){
         cout<<x<<'\t';
     }
 
     cout<<endl<<endl;
 
-    // it can also be used to self append the vector, i.e. dulplicate its elements
-    vector2.insert( vector2.end(), vector2.begin(), vector2.end() );
-
-    for(int x:vector2){
-        cout<<x<<'\t';
-    }
-    
 }
 
 
