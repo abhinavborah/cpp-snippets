@@ -14,7 +14,7 @@ Parameters:
 
     first, last: first and last elements of range whose elements are to be added
     sum:  initial value of the sum
-    myfunc: a function for performing any specific task. One can even perform multiplication,subtraction,etc with a custom defined function
+    myfunc: a function for performing any specific task. One can even perform multiplication,subtraction,etc. with a custom defined function
 
 Source: GFG
 */
