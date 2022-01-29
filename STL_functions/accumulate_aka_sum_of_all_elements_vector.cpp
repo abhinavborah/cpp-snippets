@@ -33,7 +33,7 @@ Output: 6
 Input: accounts = [[1,5],[7,3],[3,5]]
 Output: 10
 
-Strategy used: compared the subsubs of the vectors inside the main vector 
+Strategy used: compare the sub-sums of the vectors inside the main vector 
 */
 
 int maximumWealth(vector<vector<int>>& accounts) {
