@@ -16,7 +16,7 @@ int main(){
     vector<int> vector1{1,2,3,4,5};
     vector<int> vector2{6,7,8,9,10};
 
-    // can be used to append two vectors
+    // can be used to concatenate two vectors
     vector1.insert( vector1.end(), vector2.begin(), vector2.end() );
 
     for(int x:vector1){
