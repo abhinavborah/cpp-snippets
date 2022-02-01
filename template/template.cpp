@@ -8,7 +8,7 @@ typedef priority_queue<long long int> maxheap;
 #define IOS ios::sync_with_stdio(false); std::cin.tie(NULL); std::cout.tie(NULL);
 
 void solve(){
-    
+
 }
 
 int main(){
