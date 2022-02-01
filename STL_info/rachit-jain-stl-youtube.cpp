@@ -91,7 +91,8 @@ void setDemo(){
 // map stl
 void mapDemo(){
     map<int, int> m;
-    // m.insert({key,value}), m.find(key) & m.erase(key) would also take O(logn) time
+    // m.insert({key,value}), m.find(key) & m.erase(key) would also take O(logn) time; insert and erase are O(1) for unordered maps
+    // maps use self balancing trees whereas unordered_map uses arrays with linked lists in them
     m[0]=1;
     m[3]=5;
     m.insert({ 5, 30 });
